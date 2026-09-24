@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="pt" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateus Almeida | QA Engineer & Full-Stack Developer (AI-Driven Delivery)</title>
+    
+    <!-- SEO & Metadados -->
+    <meta name="description" content="Aplicações Web e APIs prontas em dias, não semanas. Engenharia de software moderna com Next.js, Supabase e Vercel unida a rigoroso padrão de QA. Serviços rápidos no Fiverr e contratos de baixo risco.">
+    <meta name="keywords" content="Mateus Almeida, QA Engineer, Full-Stack Developer, Next.js, Supabase, Vercel, Fiverr Freelancer, Bug Fixing Emergencial, Auditoria QA, API Testing, Postman, TypeScript, Tailwind CSS, Montijo, Portugal">
+    <meta name="author" content="Mateus Almeida">
+    <link rel="canonical" href="https://cv-mateus-almeida.vercel.app">
+    
+    <!-- Open Graph / Redes Sociais -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cv-mateus-almeida.vercel.app">
+    <meta property="og:title" content="Mateus Almeida | Full-Stack & AI-Driven Delivery (QA Rigor)">
+    <meta property="og:description" content="Aplicações Web, CRUDs e APIs prontas em dias. Engenharia ágil com Next.js, Supabase, Vercel e padrão de testes industriais.">
+    <meta property="og:locale" content="pt_PT">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mateus Almeida | Full-Stack & AI-Driven Delivery">
+    <meta name="twitter:description" content="Aplicações Web e APIs com entrega rápida e zero bugs em produção. Next.js, Supabase e Vercel.">
+
+    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN com Configuração Customizada -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        dark: {
+                            bg: '#0d1117',
+                            card: '#161b22',
+                            subtle: '#21262d',
+                            border: '#30363d',
+                            muted: '#8b949e',
+                            text: '#f0f6fc'
+                        },
+                        brand: {
+                            emerald: '#10b981',
+                            emeraldDark: '#059669',
+                            blue: '#58a6ff',
+                            cyan: '#38bdf8'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Schema.org JSON-LD para Google Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://cv-mateus-almeida.vercel.app/#person",
+          "name": "Mateus Almeida",
+          "jobTitle": "QA Engineer & Full-Stack Developer",
+          "url": "https://cv-mateus-almeida.vercel.app",
+          "sameAs": [
+            "https://github.com/teusbraga",
+            "https://cert.efset.org/pspgCD"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Montijo",
+            "addressCountry": "Portugal"
+          },
+          "email": "mts.almeida7@gmail.com",
+          "telephone": "+351924689447",
+          "knowsAbout": [
+            "Quality Assurance",
+            "Manual Testing",
+            "API Testing",
+            "Next.js",
+            "TypeScript",
+            "Supabase",
+            "Vercel Deployment",
+            "Postman",
+            "Jira",
+            "Bug Fixing",
+            "SEO"
+          ]
+        },
+        {
+          "@type": "ProfessionalService",
+          "name": "Mateus Almeida - Full-Stack Delivery & QA",
+          "url": "https://cv-mateus-almeida.vercel.app",
+          "areaServed": "Worldwide"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        body {
+            background-color: #0d1117;
+            color: #f0f6fc;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Subtle background grid pattern */
+        .bg-grid-pattern {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(48, 54, 61, 0.25) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(48, 54, 61, 0.25) 1px, transparent 1px);
+        }
+
+        /* Radial Glows */
+        .radial-glow-emerald {
+            background: radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.15) 0%, transparent 65%);
+        }
+        .radial-glow-blue {
+            background: radial-gradient(circle at 80% 20%, rgba(88, 166, 255, 0.1) 0%, transparent 60%);
+        }
+
+        /* Card Hover */
+        .card-hover-effect {
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .card-hover-effect:hover {
+            transform: translateY(-4px);
+            border-color: rgba(88, 166, 255, 0.4);
+            box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.6), 0 0 20px -5px rgba(88, 166, 255, 0.15);
+        }
+        .card-hover-emerald:hover {
+            transform: translateY(-4px);
+            border-color: rgba(16, 185, 129, 0.5);
+            box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.6), 0 0 25px -5px rgba(16, 185, 129, 0.2);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0d1117;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #21262d;
+            border-radius: 4px;
+            border: 2px solid #0d1117;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #30363d;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen relative selection:bg-emerald-500/20 selection:text-emerald-300">
+
+    <!-- Background Layers -->
+    <div class="fixed inset-0 pointer-events-none bg-grid-pattern opacity-40 z-0"></div>
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[450px] pointer-events-none radial-glow-emerald z-0"></div>
+    <div class="fixed top-60 right-0 w-[500px] h-[500px] pointer-events-none radial-glow-blue z-0 opacity-60"></div>
+
+    <!-- MAIN CONTAINER -->
+    <div class="relative z-10 flex flex-col min-h-screen">
+
+        <!-- NAVBAR -->
+        <header class="sticky top-0 z-50 w-full border-b border-dark-border/80 bg-dark-bg/85 backdrop-blur-md">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+                
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-2 group">
+                    <div class="w-9 h-9 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 group-hover:border-emerald-400 transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-bold text-sm tracking-tight text-white group-hover:text-emerald-400 transition-colors">
+                            Mateus Almeida
+                        </span>
+                        <span class="text-[11px] text-dark-muted font-mono flex items-center gap-1">
+                            <span class="text-emerald-400">🛡️</span> QA + Full-Stack
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Availability Badge (Desktop) -->
+                <div class="hidden lg:flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/40 border border-emerald-800/40 text-xs text-emerald-300">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                    </span>
+                    <span>Disponível para novos contratos & Fiverr</span>
+                </div>
+
+                <!-- Nav Links -->
+                <nav class="hidden md:flex items-center gap-6 text-sm text-gray-300">
+                    <a href="#servicos" class="hover:text-emerald-400 transition-colors">Serviços</a>
+                    <a href="#diferencial" class="hover:text-emerald-400 transition-colors">Por que QA + IA?</a>
+                    <a href="#cases" class="hover:text-emerald-400 transition-colors">Projetos</a>
+                    <a href="#skills" class="hover:text-emerald-400 transition-colors">Stack</a>
+                    <a href="#experiencia" class="hover:text-emerald-400 transition-colors">Trajetória</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden md:flex items-center gap-3">
+                    <button onclick="copyToClipboard('mts.almeida7@gmail.com', this, 'Email Copiado!')" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-dark-border bg-dark-card hover:bg-dark-subtle text-xs text-gray-300 hover:text-white transition-all">
+                        <svg class="w-3.5 h-3.5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                        <span>Copiar Email</span>
+                    </button>
+                    <a href="https://www.fiverr.com/seu-link" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1 px-4 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-semibold text-xs tracking-wide transition-all shadow-sm">
+                        <span>Fiverr</span>
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button onclick="toggleMobileMenu()" class="md:hidden p-2 rounded-lg text-gray-400 hover:text-white hover:bg-dark-card">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+
+            <!-- Mobile Drawer -->
+            <div id="mobile-menu" class="hidden md:hidden border-b border-dark-border bg-dark-bg/95 px-4 py-5 space-y-4">
+                <nav class="flex flex-col space-y-3 text-sm text-gray-200">
+                    <a href="#servicos" onclick="toggleMobileMenu()" class="px-2 py-1.5 rounded hover:bg-dark-card">Serviços & Micro-tarefas</a>
+                    <a href="#diferencial" onclick="toggleMobileMenu()" class="px-2 py-1.5 rounded hover:bg-dark-card">Diferencial: Rigor de QA</a>
+                    <a href="#cases" onclick="toggleMobileMenu()" class="px-2 py-1.5 rounded hover:bg-dark-card">Projetos & Arquiteturas</a>
+                    <a href="#skills" onclick="toggleMobileMenu()" class="px-2 py-1.5 rounded hover:bg-dark-card">Habilidades Técnicas</a>
+                    <a href="#experiencia" onclick="toggleMobileMenu()" class="px-2 py-1.5 rounded hover:bg-dark-card">Trajetória Industrial & QA</a>
+                    <a href="#contato" onclick="toggleMobileMenu()" class="px-2 py-1.5 rounded hover:bg-dark-card">Contato Direto</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- HERO SECTION -->
+        <section class="relative pt-12 pb-16 md:pt-20 md:pb-24 overflow-hidden">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
+                
+                <!-- Tag Pill -->
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-dark-card border border-dark-border mb-6 text-xs font-mono text-gray-300">
+                    <span class="flex h-2 w-2 rounded-full bg-emerald-400"></span>
+                    <span>Next.js 15 • Supabase • Vercel • Rigor de QA Industrial</span>
+                </div>
+
+                <!-- Main Headline -->
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
+                    Aplicações Web e APIs prontas em <br class="hidden sm:block"/>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-500">
+                        dias, não semanas.
+                    </span>
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed font-normal">
+                    Engenharia de software moderna acelerada por IA, Vercel e Supabase unida a um <strong class="text-white font-semibold">rigoroso padrão de QA</strong>. Do levantamento de requisitos ao deploy seguro sem atalhos na estabilidade. Ideal para clientes Fiverr e contratos de baixo risco para empresas.
+                </p>
+
+                <!-- CTAs -->
+                <div class="flex flex-wrap items-center justify-center gap-4 mb-14">
+                    <a href="https://www.fiverr.com/seu-link" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-bold px-7 py-3.5 rounded-xl transition-all transform hover:-translate-y-0.5 shadow-lg shadow-emerald-500/20 text-sm md:text-base">
+                        <span>Contratar no Fiverr</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </a>
+
+                    <a href="https://wa.me/351924689447?text=Olá%20Mateus,%20vi%20seu%20portfolio%20e%20gostaria%20de%20um%20orçamento%20rápido." target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 border border-emerald-500/40 bg-emerald-950/20 hover:bg-emerald-950/40 text-emerald-300 font-semibold px-6 py-3.5 rounded-xl transition-all transform hover:-translate-y-0.5 text-sm md:text-base">
+                        <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                        <span>Falar no WhatsApp</span>
+                    </a>
+
+                    <button onclick="copyToClipboard('mts.almeida7@gmail.com', this, 'Email Copiado!')" class="flex items-center gap-2 border border-dark-border bg-dark-card hover:bg-dark-subtle text-gray-200 font-medium px-5 py-3.5 rounded-xl transition-all transform hover:-translate-y-0.5 text-sm md:text-base">
+                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                        <span class="font-mono text-xs md:text-sm">mts.almeida7@gmail.com</span>
+                    </button>
+                </div>
+
+                <!-- Trust Metrics / Badges -->
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 max-w-4xl mx-auto mb-14 text-left">
+                    <div class="p-4 rounded-xl bg-dark-card/90 border border-dark-border/80 card-hover-effect">
+                        <div class="flex items-center gap-2 text-emerald-400 mb-1 font-semibold text-xs md:text-sm">
+                            <span>⚡</span> Turnaround 24h-72h
+                        </div>
+                        <p class="text-xs text-dark-muted">Micro-tarefas, CRUDs e correções pontuais em velocidade recorde.</p>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-dark-card/90 border border-dark-border/80 card-hover-effect">
+                        <div class="flex items-center gap-2 text-brand-blue mb-1 font-semibold text-xs md:text-sm">
+                            <span>🛡️</span> Crivo de QA Industrial
+                        </div>
+                        <p class="text-xs text-dark-muted">Testes de borda, Postman, validação de regras e zero quebras em prod.</p>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-dark-card/90 border border-dark-border/80 card-hover-effect">
+                        <div class="flex items-center gap-2 text-emerald-400 mb-1 font-semibold text-xs md:text-sm">
+                            <span>🌍</span> Inglês C1 Avançado
+                        </div>
+                        <p class="text-xs text-dark-muted">Certificação EF SET, pronto para times globais, briefs e documentação.</p>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-dark-card/90 border border-dark-border/80 card-hover-effect">
+                        <div class="flex items-center gap-2 text-brand-blue mb-1 font-semibold text-xs md:text-sm">
+                            <span>🇵🇹</span> Montijo • Portugal
+                        </div>
+                        <p class="text-xs text-dark-muted">Fuso GMT compatível com Europa continental, Reino Unido e Américas.</p>
+                    </div>
+                </div>
+
+                <!-- CI/CD Terminal Simulator -->
+                <div class="max-w-3xl mx-auto rounded-2xl border border-dark-border bg-dark-card/70 backdrop-blur-md p-4 sm:p-6 text-left shadow-2xl overflow-hidden font-mono text-xs sm:text-sm">
+                    <div class="flex items-center justify-between border-b border-dark-border/80 pb-3 mb-4">
+                        <div class="flex items-center gap-2">
+                            <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+                            <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
+                            <span class="w-3 h-3 rounded-full bg-green-500/80 inline-block"></span>
+                            <span class="text-xs text-dark-muted ml-2">delivery-pipeline.config.ts</span>
+                        </div>
+                        <span class="text-[11px] px-2 py-0.5 rounded bg-emerald-950/60 border border-emerald-800/50 text-emerald-400">
+                            Vercel Edge Ready
+                        </span>
+                    </div>
+
+                    <div class="space-y-2 text-gray-300">
+                        <div><span class="text-emerald-400 font-bold">$</span> git push origin main</div>
+                        <div class="text-dark-muted pl-4">&gt; Next.js 15 App Router compilation: <span class="text-emerald-400 font-semibold">Ready (0.7s)</span></div>
+                        <div class="text-dark-muted pl-4">&gt; Supabase Row Level Security (RLS) & Auth: <span class="text-emerald-400 font-semibold">100% Protected</span></div>
+                        <div class="text-dark-muted pl-4">&gt; QA Suite: 34 API Assertions (Postman/Newman): <span class="text-emerald-400 font-semibold">34 Passed</span></div>
+                        <div class="text-emerald-400 font-semibold pt-1">✓ Deploy live na Vercel • Zero bugs em produção garantido.</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SERVIÇOS & GIGS FIVERR -->
+        <section id="servicos" class="py-20 border-t border-dark-border/60 relative">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-xs font-mono tracking-wider uppercase text-emerald-400 bg-emerald-950/40 border border-emerald-800/40 px-3 py-1 rounded-full">
+                        Serviços para Fiverr & Contratos Rápidos
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mt-4 mb-4 tracking-tight">
+                        O que eu entrego para o seu negócio
+                    </h2>
+                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed">
+                        Formatos modulares e de baixo risco, ideais para agências com prazos apertados, empreendedores que precisam lançar e empresas que não toleram bugs em produção.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+                    
+                    <!-- Serviço 1: Apps -->
+                    <div class="bg-dark-card/90 border border-dark-border rounded-2xl p-6 sm:p-8 flex flex-col justify-between card-hover-emerald group">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-xl">
+                                    🚀
+                                </div>
+                                <span class="text-[11px] font-mono font-medium px-2.5 py-1 rounded-full bg-dark-subtle border border-dark-border text-emerald-400">
+                                    Mais Popular
+                                </span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-emerald-300 transition-colors">
+                                Apps & Micro-tarefas Full-Stack
+                            </h3>
+                            <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                                Sistemas web funcionais (Frontend + Backend), CRUDs rápidos, APIs customizadas e integrações modernas com Next.js e Supabase.
+                            </p>
+                            <ul class="space-y-2.5 mb-6 text-xs sm:text-sm text-gray-300">
+                                <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Frontend moderno em Next.js 15 + Tailwind CSS</li>
+                                <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Banco de dados Supabase (PostgreSQL) com RLS seguro</li>
+                                <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Autenticação de usuários (Email, Google, Magic Link)</li>
+                                <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Server Actions e APIs RESTful tipadas em TypeScript</li>
+                                <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Deploy contínuo e infraestrutura na Vercel</li>
+                            </ul>
+                        </div>
+                        <div class="pt-6 border-t border-dark-border/80 flex items-center justify-between text-xs">
+                            <span class="text-dark-muted font-mono">Prazo: <strong class="text-gray-200">2 a 5 dias úteis</strong></span>
+                            <a href="https://www.fiverr.com/seu-link" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:text-emerald-300 font-semibold">Solicitar no Fiverr →</a>
+                        </div>
+                    </div>
+
+                    <!-- Serviço 2: Bug Fixing -->
+                    <div class="bg-dark-card/90 border border-dark-border rounded-2xl p-6 sm:p-8 flex flex-col justify-between card-hover-effect group">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-xl">
+                                    🔥
+                                </div>
+                                <span class="text-[11px] font-mono font-medium px-2.5 py-1 rounded-full bg-dark-subtle border border-dark-border text-amber-400">
+                                    Prioridade Urgente
+                                </span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-amber-300 transition-colors">
+                                Plantão de Bug Fixing Emergencial
+                            </h3>
+                            <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                                Resolução cirúrgica de quebras em produção, erros impeditivos de deploy, falhas de segurança e bugs que travam o seu faturamento.
+                            </p>
+                            <ul class="space-y-2.5 mb-6 text-xs sm:text-sm text-gray-300">
+                                <li class="flex items-center gap-2"><span class="text-amber-400 font-bold">✓</span> Erros de CORS e headers de segurança</li>
+                                <li class="flex items-center gap-2"><span class="text-amber-400 font-bold">✓</span> Falhas em políticas de Row Level Security (RLS) do Supabase</li>
+                                <li class="flex items-center gap-2"><span class="text-amber-400 font-bold">✓</span> Hydration mismatches e falhas de SSR no Next.js</li>
+                                <li class="flex items-center gap-2"><span class="text-amber-400 font-bold">✓</span> Quebras de responsividade mobile (iOS Safari & Android)</li>
+                                <li class="flex items-center gap-2"><span class="text-amber-400 font-bold">✓</span> Vazamentos de memória e lentidão em queries de banco</li>
+                            </ul>
+                        </div>
+                        <div class="pt-6 border-t border-dark-border/80 flex items-center justify-between text-xs">
+                            <span class="text-dark-muted font-mono">Prazo: <strong class="text-gray-200">24h a 48h</strong></span>
+                            <a href="https://www.fiverr.com/seu-link" target="_blank" rel="noopener noreferrer" class="text-amber-400 hover:text-amber-300 font-semibold">Acionar Plantão →</a>
+                        </div>
+                    </div>
+
+                    <!-- Serviço 3: QA Audit -->
+                    <div class="bg-dark-card/90 border border-dark-border rounded-2xl p-6 sm:p-8 flex flex-col justify-between card-hover-effect group">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-12 h-12 rounded-xl bg-brand-blue/10 border border-brand-blue/30 flex items-center justify-center text-brand-blue text-xl">
+                                    🛡️
+                                </div>
+                                <span class="text-[11px] font-mono font-medium px-2.5 py-1 rounded-full bg-dark-subtle border border-dark-border text-brand-blue">
+                                    Risco Zero
+                                </span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-blue transition-colors">
+                                Auditoria de QA & Diagnóstico de Saúde
+                            </h3>
+                            <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                                Revisão rigorosa de projetos para agências e devs encontrarem falhas críticas de usabilidade, API e segurança antes que os clientes percebam.
+                            </p>
+                            <ul class="space-y-2.5 mb-6 text-xs sm:text-sm text-gray-300">
+                                <li class="flex items-center gap-2"><span class="text-brand-blue font-bold">✓</span> Testes exploratórios e funcionais completos</li>
+                                <li class="flex items-center gap-2"><span class="text-brand-blue font-bold">✓</span> Suíte de testes de API no Postman com validação de status e payloads</li>
+                                <li class="flex items-center gap-2"><span class="text-brand-blue font-bold">✓</span> Mapeamento de cenários de borda (edge cases) e regras de negócio</li>
+                                <li class="flex items-center gap-2"><span class="text-brand-blue font-bold">✓</span> Relatório estruturado padrão Jira com severidade e impacto</li>
+                                <li class="flex items-center gap-2"><span class="text-brand-blue font-bold">✓</span> Checklist anti-vulnerabilidade e boas práticas de código</li>
+                            </ul>
+                        </div>
+                        <div class="pt-6 border-t border-dark-border/80 flex items-center justify-between text-xs">
+                            <span class="text-dark-muted font-mono">Prazo: <strong class="text-gray-200">1 a 3 dias úteis</strong></span>
+                            <a href="https://www.fiverr.com/seu-link" target="_blank" rel="noopener noreferrer" class="text-brand-blue hover:underline font-semibold">Contratar Auditoria →</a>
+                        </div>
+                    </div>
+
+                    <!-- Serviço 4: SEO Técnico -->
+                    <div class="bg-dark-card/90 border border-dark-border rounded-2xl p-6 sm:p-8 flex flex-col justify-between card-hover-effect group">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-xl">
+                                    ⚡
+                                </div>
+                                <span class="text-[11px] font-mono font-medium px-2.5 py-1 rounded-full bg-dark-subtle border border-dark-border text-purple-400">
+                                    Google Rank
+                                </span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-purple-300 transition-colors">
+                                Otimização Técnica de SEO & Vercel Edge
+                            </h3>
+                            <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                                Estruturação profunda de metadados, performance Core Web Vitals e indexação para colocar seu projeto na frente nos motores de busca.
+                            </p>
+                            <ul class="space-y-2.5 mb-6 text-xs sm:text-sm text-gray-300">
+                                <li class="flex items-center gap-2"><span class="text-purple-400 font-bold">✓</span> Metadados dinâmicos e OpenGraph / Twitter Cards</li>
+                                <li class="flex items-center gap-2"><span class="text-purple-400 font-bold">✓</span> Estrutura JSON-LD (Schema.org) para Rich Snippets do Google</li>
+                                <li class="flex items-center gap-2"><span class="text-purple-400 font-bold">✓</span> Sitemap.xml dinâmico e robots.txt configurados para rastreamento</li>
+                                <li class="flex items-center gap-2"><span class="text-purple-400 font-bold">✓</span> Otimização de Core Web Vitals (LCP, INP, CLS verdes)</li>
+                                <li class="flex items-center gap-2"><span class="text-purple-400 font-bold">✓</span> Acessibilidade semântica (HTML5 / a11y)</li>
+                            </ul>
+                        </div>
+                        <div class="pt-6 border-t border-dark-border/80 flex items-center justify-between text-xs">
+                            <span class="text-dark-muted font-mono">Prazo: <strong class="text-gray-200">1 a 2 dias úteis</strong></span>
+                            <a href="https://www.fiverr.com/seu-link" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:underline font-semibold">Otimizar Meu Site →</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- DIFERENCIAL (QA + IA) -->
+        <section id="diferencial" class="py-20 border-t border-dark-border/60 bg-dark-bg/60 relative">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-xs font-mono tracking-wider uppercase text-emerald-400 bg-emerald-950/40 border border-emerald-800/40 px-3 py-1 rounded-full">
+                        Diferencial Competitivo
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mt-4 mb-4 tracking-tight">
+                        Por que esse fluxo funciona tão rápido?
+                    </h2>
+                    <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+                        Velocidade sem controle é apenas dívida técnica acumulada. Minha base em <strong class="text-emerald-400">Quality Assurance e Disciplina Industrial</strong> transforma o poder da IA em software estável, previsível e pronto para faturar.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-16">
+                    
+                    <!-- Dev Comum -->
+                    <div class="bg-dark-card/60 border border-red-950/60 rounded-2xl p-6 sm:p-8">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-10 h-10 rounded-xl bg-red-500/10 border border-red-500/30 flex items-center justify-center text-red-400 font-bold">
+                                ⚠️
+                            </div>
+                            <div>
+                                <h3 class="text-base sm:text-lg font-bold text-gray-200">O Dev "Apenas IA" Comum</h3>
+                                <span class="text-xs text-red-400/90 font-mono">Rápido para entregar, caro para consertar</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-4 text-xs sm:text-sm text-gray-400">
+                            <li class="flex items-start gap-3"><span class="text-red-400 font-bold">✕</span><span>Gera código sem entender o ciclo de vida da aplicação ou casos de borda.</span></li>
+                            <li class="flex items-start gap-3"><span class="text-red-400 font-bold">✕</span><span>Supabase sem Row Level Security (RLS) adequado, expondo dados sensíveis.</span></li>
+                            <li class="flex items-start gap-3"><span class="text-red-400 font-bold">✕</span><span>Quebras de hidratação (hydration errors) e falhas no deploy da Vercel.</span></li>
+                            <li class="flex items-start gap-3"><span class="text-red-400 font-bold">✕</span><span>Nenhum plano de teste ou validação estruturada com Postman/Jira.</span></li>
+                            <li class="flex items-start gap-3"><span class="text-red-400 font-bold">✕</span><span>O cliente vira o testador (e descobre os bugs na frente dos próprios usuários).</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Mateus Almeida -->
+                    <div class="bg-gradient-to-b from-dark-card to-dark-subtle/80 border border-emerald-500/40 rounded-2xl p-6 sm:p-8 shadow-xl shadow-emerald-950/20">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/40 flex items-center justify-center text-emerald-400 font-bold">
+                                🛡️
+                            </div>
+                            <div>
+                                <h3 class="text-base sm:text-lg font-bold text-white flex items-center gap-2">
+                                    Meu Fluxo: IA + Rigor de QA
+                                    <span class="text-[10px] uppercase font-mono px-2 py-0.5 rounded bg-emerald-500 text-gray-950 font-extrabold">Zero Defect</span>
+                                </h3>
+                                <span class="text-xs text-emerald-400 font-mono">Velocidade de IA com segurança de engenharia</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-4 text-xs sm:text-sm text-gray-200">
+                            <li class="flex items-start gap-3"><span class="text-emerald-400 font-bold">✓</span><span><strong class="text-white">Arquitetura Sólida:</strong> Código TypeScript tipado, Next.js 15 moderno e Clean Architecture.</span></li>
+                            <li class="flex items-start gap-3"><span class="text-emerald-400 font-bold">✓</span><span><strong class="text-white">Supabase Blindado:</strong> Regras de RLS testadas, autenticação validada e queries otimizadas.</span></li>
+                            <li class="flex items-start gap-3"><span class="text-emerald-400 font-bold">✓</span><span><strong class="text-white">Validação com Postman:</strong> Testes de integração de endpoints, status codes e payloads.</span></li>
+                            <li class="flex items-start gap-3"><span class="text-emerald-400 font-bold">✓</span><span><strong class="text-white">Deploy Seguro na Vercel:</strong> Build limpo sem erros de tipagem ou conflitos de SSR.</span></li>
+                            <li class="flex items-start gap-3"><span class="text-emerald-400 font-bold">✓</span><span><strong class="text-white">Bagagem Industrial (Honda & Parmalat):</strong> Disciplina Kaizen e obsessão por detalhes críticos.</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PROJETOS & CASOS -->
+        <section id="cases" class="py-20 border-t border-dark-border/60 relative">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-xs font-mono tracking-wider uppercase text-emerald-400 bg-emerald-950/40 border border-emerald-800/40 px-3 py-1 rounded-full">
+                        Portfólio & Prova de Execução
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mt-4 mb-4 tracking-tight">
+                        Projetos & Arquiteturas em Destaque
+                    </h2>
+                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed">
+                        Exemplos reais de engenharia full-stack, segurança de banco de dados e testes de qualidade prontos para servirem de base para o seu próximo produto.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    
+                    <div class="bg-dark-card border border-dark-border rounded-2xl p-6 sm:p-8 flex flex-col justify-between card-hover-effect">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-xs font-mono text-emerald-400 bg-emerald-950/40 border border-emerald-800/30 px-2.5 py-0.5 rounded-full">Full-Stack & Segurança</span>
+                                <span class="text-[11px] font-mono text-dark-muted px-2 py-0.5 rounded bg-dark-subtle border border-dark-border">Pronto para Deploy</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Next.js 15 & Supabase SaaS Core</h3>
+                            <p class="text-gray-400 text-xs sm:text-sm mb-6 leading-relaxed">
+                                Arquitetura completa de aplicação web com Next.js 15 App Router, TypeScript, Tailwind CSS e banco Supabase (PostgreSQL) com Row Level Security (RLS) blindado.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-dark-border/80 flex flex-wrap gap-1.5 mb-4">
+                            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-dark-subtle text-gray-300 border border-dark-border/60">Next.js 15</span>
+                            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-dark-subtle text-gray-300 border border-dark-border/60">Supabase</span>
+                            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-dark-subtle text-gray-300 border border-dark-border/60">TypeScript</span>
+                            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-dark-subtle text-gray-300 border border-dark-border/60">RLS</span>
+                        </div>
+                        <a href="https://github.com/teusbraga" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300">Ver no GitHub →</a>
+                    </div>
+
+                    <div class="bg-dark-card border border-dark-border rounded-2xl p-6 sm:p-8 flex flex-col justify-between card-hover-effect">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-xs font-mono text-emerald-400 bg-emerald-950/40 border border-emerald-800/30 px-2.5 py-0.5 rounded-full">Quality Assurance & APIs</span>
+                                <span class="text-[11px] font-mono text-dark-muted px-2 py-0.5 rounded bg-dark-subtle border border-dark-border">Suíte Validada</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Suíte Automatizada de Testes de API</h3>
+                            <p class="text-gray-400 text-xs sm:text-sm mb-6 leading-relaxed">
+                                Framework de validação de APIs REST utilizando Postman e Newman CLI, cobrindo validação de status HTTP, schema JSON, latência e segurança de headers.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-dark-border/80 flex flex-wrap gap-1.5 mb-4">
+                            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-dark-subtle text-gray-300 border border-dark-border/60">Postman</span>
+                            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-dark-subtle text-gray-300 border border-dark-border/60">API Testing</span>
+                            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-dark-subtle text-gray-300 border border-dark-border/60">Newman</span>
+                        </div>
+                        <a href="https://github.com/teusbraga" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300">Ver Documentação QA →</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- HABILIDADES & STACK -->
+        <section id="skills" class="py-20 border-t border-dark-border/60 bg-dark-bg/40 relative">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                
+                <div class="text-center max-w-3xl mx-auto mb-14">
+                    <span class="text-xs font-mono tracking-wider uppercase text-emerald-400 bg-emerald-950/40 border border-emerald-800/40 px-3 py-1 rounded-full">
+                        Arsenal Técnico
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mt-4 mb-4 tracking-tight">
+                        Habilidades Técnicas & Ferramentas
+                    </h2>
+                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed">
+                        Combinação estratégica entre ferramentas modernas de desenvolvimento rápido e rigor técnico de testes para entregar software sem surpresas.
+                    </p>
+                </div>
+
+                <!-- Skill Grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
+                    <div class="p-4 rounded-xl bg-dark-card border border-dark-border/80 card-hover-effect">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="font-semibold text-xs sm:text-sm text-white">Next.js 15 (App Router)</span>
+                            <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-emerald-950/60 border border-emerald-800/40 text-emerald-400">Core</span>
+                        </div>
+                        <div class="text-[11px] text-dark-muted font-mono pt-2 border-t border-dark-border/40 flex justify-between">
+                            <span>Nível</span><span class="text-gray-300">Avançado</span>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-dark-card border border-dark-border/80 card-hover-effect">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="font-semibold text-xs sm:text-sm text-white">Supabase (PostgreSQL)</span>
+                            <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-emerald-950/60 border border-emerald-800/40 text-emerald-400">Core</span>
+                        </div>
+                        <div class="text-[11px] text-dark-muted font-mono pt-2 border-t border-dark-border/40 flex justify-between">
+                            <span>Nível</span><span class="text-gray-300">Avançado</span>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-dark-card border border-dark-border/80 card-hover-effect">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="font-semibold text-xs sm:text-sm text-white">TypeScript & React</span>
+                            <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-emerald-950/60 border border-emerald-800/40 text-emerald-400">Core</span>
+                        </div>
+                        <div class="text-[11px] text-dark-muted font-mono pt-2 border-t border-dark-border/40 flex justify-between">
+                            <span>Nível</span><span class="text-gray-300">Avançado</span>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-dark-card border border-dark-border/80 card-hover-effect">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="font-semibold text-xs sm:text-sm text-white">Postman & API Testing</span>
+                            <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-emerald-950/60 border border-emerald-800/40 text-emerald-400">QA</span>
+                        </div>
+                        <div class="text-[11px] text-dark-muted font-mono pt-2 border-t border-dark-border/40 flex justify-between">
+                            <span>Nível</span><span class="text-gray-300">Especialista</span>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-dark-card border border-dark-border/80 card-hover-effect">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="font-semibold text-xs sm:text-sm text-white">Row Level Security (RLS)</span>
+                            <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-emerald-950/60 border border-emerald-800/40 text-emerald-400">Segurança</span>
+                        </div>
+                        <div class="text-[11px] text-dark-muted font-mono pt-2 border-t border-dark-border/40 flex justify-between">
+                            <span>Nível</span><span class="text-gray-300">Avançado</span>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-dark-card border border-dark-border/80 card-hover-effect">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="font-semibold text-xs sm:text-sm text-white">Vercel & Git Workflow</span>
+                            <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-emerald-950/60 border border-emerald-800/40 text-emerald-400">Deploy</span>
+                        </div>
+                        <div class="text-[11px] text-dark-muted font-mono pt-2 border-t border-dark-border/40 flex justify-between">
+                            <span>Nível</span><span class="text-gray-300">Avançado</span>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-dark-card border border-dark-border/80 card-hover-effect">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="font-semibold text-xs sm:text-sm text-white">Jira & Bug Triage</span>
+                            <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-emerald-950/60 border border-emerald-800/40 text-emerald-400">QA</span>
+                        </div>
+                        <div class="text-[11px] text-dark-muted font-mono pt-2 border-t border-dark-border/40 flex justify-between">
+                            <span>Nível</span><span class="text-gray-300">Especialista</span>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-dark-card border border-dark-border/80 card-hover-effect">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="font-semibold text-xs sm:text-sm text-white">SEO Técnico (JSON-LD)</span>
+                            <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-emerald-950/60 border border-emerald-800/40 text-emerald-400">Rank</span>
+                        </div>
+                        <div class="text-[11px] text-dark-muted font-mono pt-2 border-t border-dark-border/40 flex justify-between">
+                            <span>Nível</span><span class="text-gray-300">Avançado</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TRAJETÓRIA: DO RIGOR INDUSTRIAL AO SOFTWARE -->
+        <section id="experiencia" class="py-20 border-t border-dark-border/60 relative">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6">
+                
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-xs font-mono tracking-wider uppercase text-emerald-400 bg-emerald-950/40 border border-emerald-800/40 px-3 py-1 rounded-full">
+                        Carreira & Disciplina
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mt-4 mb-4 tracking-tight">
+                        Do Rigor Industrial ao Software Moderno
+                    </h2>
+                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed">
+                        Minha experiência em gigantes multinacionais como Honda e Parmalat forjou uma disciplina inegociável por qualidade, hoje traduzida em código limpo e entregas sem falhas.
+                    </p>
+                </div>
+
+                <div class="relative border-l-2 border-emerald-500/40 ml-4 sm:ml-6 space-y-12 pl-6 sm:pl-8">
+                    
+                    <div class="relative group">
+                        <div class="absolute -left-[31px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-dark-bg border-2 border-emerald-500 flex items-center justify-center">
+                            <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
+                        </div>
+                        <div class="bg-dark-card border border-dark-border rounded-2xl p-6 sm:p-7 card-hover-effect">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-emerald-950/60 border border-emerald-800/40 text-emerald-400 font-semibold">Foco Atual</span>
+                                <span class="text-xs text-dark-muted font-mono">2024 — Presente</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-1">Full-Stack Developer & QA Delivery Engineer</h3>
+                            <div class="text-sm font-semibold text-brand-blue mb-3">Freelance & Contratos Ágeis (Fiverr / Global) • <span class="text-xs text-gray-400 font-normal">Montijo, Portugal</span></div>
+                            <p class="text-xs sm:text-sm text-gray-300">
+                                Desenvolvimento rápido de aplicações web completas, micro-tarefas e plantão de bug fixing com foco em Vercel e Supabase.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="relative group">
+                        <div class="absolute -left-[31px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-dark-bg border-2 border-emerald-500 flex items-center justify-center">
+                            <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
+                        </div>
+                        <div class="bg-dark-card border border-dark-border rounded-2xl p-6 sm:p-7 card-hover-effect">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-emerald-950/60 border border-emerald-800/40 text-emerald-400 font-semibold">Formação QA</span>
+                                <span class="text-xs text-dark-muted font-mono">2024</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-1">Analista de Quality Assurance (QA)</h3>
+                            <div class="text-sm font-semibold text-brand-blue mb-3">TripleTen QA Bootcamp • <span class="text-xs text-gray-400 font-normal">Formação Técnica</span></div>
+                            <p class="text-xs sm:text-sm text-gray-300">
+                                Testes funcionais, testes de API com Postman, design de casos de teste estruturados e gestão de defeitos via Jira.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="relative group">
+                        <div class="absolute -left-[31px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-dark-bg border-2 border-emerald-500 flex items-center justify-center">
+                            <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
+                        </div>
+                        <div class="bg-dark-card border border-dark-border rounded-2xl p-6 sm:p-7 card-hover-effect">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-emerald-950/60 border border-emerald-800/40 text-emerald-400 font-semibold">Cultura Kaizen</span>
+                                <span class="text-xs text-dark-muted font-mono">Experiência Industrial</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-1">Controle de Qualidade & Processos</h3>
+                            <div class="text-sm font-semibold text-brand-blue mb-3">Honda • <span class="text-xs text-gray-400 font-normal">Setor Automotivo</span></div>
+                            <p class="text-xs sm:text-sm text-gray-300">
+                                Aplicação do padrão japonês de zero-defeito (Kaizen), controle de qualidade e rigor operacional hoje aplicados em software.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="relative group">
+                        <div class="absolute -left-[31px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-dark-bg border-2 border-emerald-500 flex items-center justify-center">
+                            <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
+                        </div>
+                        <div class="bg-dark-card border border-dark-border rounded-2xl p-6 sm:p-7 card-hover-effect">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-emerald-950/60 border border-emerald-800/40 text-emerald-400 font-semibold">Padronização</span>
+                                <span class="text-xs text-dark-muted font-mono">Experiência Industrial</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-1">Garantia de Qualidade & Padronização</h3>
+                            <div class="text-sm font-semibold text-brand-blue mb-3">Parmalat • <span class="text-xs text-gray-400 font-normal">Manufatura</span></div>
+                            <p class="text-xs sm:text-sm text-gray-300">
+                                Padronização de procedimentos operacionais e prevenção proativa de não-conformidades sob alta demanda.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CERTIFICAÇÕES -->
+        <section class="py-16 border-t border-dark-border/60 bg-dark-bg/50 relative">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="text-xs font-mono tracking-wider uppercase text-emerald-400 bg-emerald-950/40 border border-emerald-800/40 px-3 py-1 rounded-full">
+                        Credenciais & Idiomas
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mt-3 mb-2 tracking-tight">
+                        Certificações & Validação Internacional
+                    </h2>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <a href="https://cert.efset.org/pspgCD" target="_blank" rel="noopener noreferrer" class="bg-dark-card border border-emerald-500/40 rounded-2xl p-6 flex flex-col justify-between card-hover-emerald group">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-2xl">🌐</span>
+                                <span class="text-xs font-mono font-bold text-emerald-400 bg-emerald-950/60 border border-emerald-800/40 px-2 py-0.5 rounded">C1 Advanced</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-1 group-hover:text-emerald-300 transition-colors">EF SET English Certificate</h3>
+                            <p class="text-xs text-gray-400 mb-4 leading-relaxed">
+                                Proficiência C1 em inglês (Advanced). Fluência para reuniões com clientes internacionais e briefs no Fiverr.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-dark-border flex items-center justify-between text-xs">
+                            <span class="text-dark-muted font-mono">Credencial Oficial</span>
+                            <span class="text-emerald-400 font-semibold group-hover:underline">Verificar Certificado →</span>
+                        </div>
+                    </a>
+
+                    <div class="bg-dark-card border border-dark-border rounded-2xl p-6 flex flex-col justify-between card-hover-effect">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-2xl">🎓</span>
+                                <span class="text-xs font-mono font-bold text-brand-blue bg-blue-950/60 border border-blue-800/40 px-2 py-0.5 rounded">Bootcamp QA</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-1">TripleTen QA Engineering</h3>
+                            <p class="text-xs text-gray-400 mb-4 leading-relaxed">
+                                Formação intensiva em metodologia de testes de software, validação de APIs com Postman e Jira.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-dark-border flex items-center justify-between text-xs">
+                            <span class="text-dark-muted font-mono">Formação Concluída</span>
+                            <span class="text-emerald-400 font-semibold">2024</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-dark-card border border-dark-border rounded-2xl p-6 flex flex-col justify-between card-hover-effect">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-2xl">📖</span>
+                                <span class="text-xs font-mono font-bold text-purple-400 bg-purple-950/60 border border-purple-800/40 px-2 py-0.5 rounded">Em Andamento</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-1">ISTQB Foundation (CTFL)</h3>
+                            <p class="text-xs text-gray-400 mb-4 leading-relaxed">
+                                Preparação contínua seguindo os padrões internacionais do ISTQB para excelência em processos de teste.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-dark-border flex items-center justify-between text-xs">
+                            <span class="text-dark-muted font-mono">Padrão Internacional</span>
+                            <span class="text-purple-400 font-semibold">Preparação</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FOOTER & CONTATO -->
+        <footer id="contato" class="py-20 border-t border-dark-border/80 bg-dark-bg relative">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6">
+                
+                <div class="bg-gradient-to-b from-dark-card to-dark-subtle/90 border border-emerald-500/40 rounded-3xl p-8 sm:p-12 text-center mb-16 shadow-2xl relative overflow-hidden">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/60 border border-emerald-800/40 text-xs font-mono text-emerald-300 mb-6">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <span>Atendimento Rápido • Resposta em menos de 2 horas</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight">
+                        Vamos resolver o seu problema hoje?
+                    </h2>
+                    <p class="text-gray-300 text-sm sm:text-base max-w-2xl mx-auto mb-8 leading-relaxed">
+                        Seja para criar um MVP completo no Next.js + Supabase, corrigir um bug que está travando sua produção ou realizar uma auditoria completa de QA no seu software.
+                    </p>
+                    <div class="flex flex-wrap items-center justify-center gap-4">
+                        <a href="https://www.fiverr.com/seu-link" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-bold px-7 py-3.5 rounded-xl transition-all transform hover:-translate-y-0.5 shadow-lg shadow-emerald-500/20 text-sm md:text-base">
+                            <span>Contratar via Fiverr</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                        </a>
+                        <a href="https://wa.me/351924689447?text=Olá%20Mateus,%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 border border-emerald-500/40 bg-emerald-950/30 hover:bg-emerald-950/50 text-emerald-300 font-semibold px-6 py-3.5 rounded-xl transition-all transform hover:-translate-y-0.5 text-sm md:text-base">
+                            <span>Chamar no WhatsApp</span>
+                        </a>
+                        <a href="mailto:mts.almeida7@gmail.com?subject=Contato%20via%20Portfolio" class="flex items-center gap-2 border border-dark-border bg-dark-card hover:bg-dark-subtle text-gray-200 font-medium px-6 py-3.5 rounded-xl transition-all transform hover:-translate-y-0.5 text-sm md:text-base">
+                            <span>Enviar Email Direto</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 text-center md:text-left">
+                    <div class="p-6 rounded-2xl bg-dark-card border border-dark-border flex flex-col justify-between">
+                        <span class="text-xs font-mono text-dark-muted mb-2">Email Profissional</span>
+                        <p class="text-sm font-semibold text-white mb-3 break-all">mts.almeida7@gmail.com</p>
+                        <button onclick="copyToClipboard('mts.almeida7@gmail.com', this, 'Copiado!')" class="py-1.5 px-3 rounded-lg border border-dark-border bg-dark-subtle text-xs text-gray-300 hover:text-white transition-all w-full">Copiar Email</button>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-dark-card border border-dark-border flex flex-col justify-between">
+                        <span class="text-xs font-mono text-dark-muted mb-2">Telefone & WhatsApp</span>
+                        <p class="text-sm font-semibold text-white mb-3">+351 924 689 447</p>
+                        <button onclick="copyToClipboard('+351924689447', this, 'Copiado!')" class="py-1.5 px-3 rounded-lg border border-dark-border bg-dark-subtle text-xs text-gray-300 hover:text-white transition-all w-full">Copiar Número</button>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-dark-card border border-dark-border flex flex-col justify-between">
+                        <span class="text-xs font-mono text-dark-muted mb-2">Localização Base</span>
+                        <p class="text-sm font-semibold text-white mb-1">Montijo • Portugal</p>
+                        <p class="text-xs text-dark-muted">Fuso Horário GMT / WET • Atendimento Global</p>
+                    </div>
+                </div>
+
+                <div class="pt-8 border-t border-dark-border/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-dark-muted">
+                    <div>Mateus Almeida • QA Engineer & Full-Stack Delivery</div>
+                    <div class="flex items-center gap-4">
+                        <a href="https://github.com/teusbraga" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">GitHub</a>
+                        <a href="https://www.fiverr.com/seu-link" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition-colors">Fiverr</a>
+                        <a href="#" class="hover:text-white transition-colors">Voltar ao Topo ↑</a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Script de Utilitários Interativos -->
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu) {
+                menu.classList.toggle('hidden');
+            }
+        }
+
+        function copyToClipboard(text, button, successMsg) {
+            navigator.clipboard.writeText(text).then(() => {
+                const originalHtml = button.innerHTML;
+                button.innerHTML = '<span class="text-emerald-400 font-semibold">' + successMsg + '</span>';
+                setTimeout(() => {
+                    button.innerHTML = originalHtml;
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>
