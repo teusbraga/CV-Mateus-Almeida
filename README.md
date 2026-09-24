@@ -18,8 +18,8 @@ Postman · Newman · Jira · API Testing · Row Level Security
 
 **Full-Stack Developer & QA Delivery Engineer** — Freelance / Fiverr *(2024 — Presente)*  
 **Analista de QA** — TripleTen Bootcamp *(2024)*  
-**Controle de Qualidade & Processos** — Honda *(Setor Automotivo)*  
-**Garantia de Qualidade & Padronização** — Parmalat *(Manufatura)*
+**Operações Comerciais & Logística** — Volkswagen & Honda *(Setor Automotivo)*  
+**Logística & Distribuição Comercial** — Parmalat *(Alimentos & Bebidas)*
 
 ---
 
