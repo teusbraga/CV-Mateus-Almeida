@@ -242,10 +242,23 @@ function applyLang(lang) {
     }
   });
 
-  // Atualiza o botão de idioma (desktop)
+  // Atualiza o botão de idioma (desktop e mobile) com SVGs para compatibilidade universal (Windows/Linux/Mac/iOS/Android)
   const toggleBtn = document.getElementById('lang-toggle');
-  const label = lang === 'en' ? '🇧🇷 PT' : '🇬🇧 EN';
-  if (toggleBtn) toggleBtn.innerHTML = `<span class="flag">${label.split(' ')[0]}</span> ${label.split(' ')[1]}`;
+  const isEn = lang === 'en';
+  
+  // Bandeira BR (quando em EN para voltar ao PT) ou UK (quando em PT para ir pro EN)
+  const flagSvg = isEn
+    ? `<svg class="w-4 h-3 rounded-[2px] shadow-sm inline-block" viewBox="0 0 720 504" fill="none"><rect width="720" height="504" fill="#009B3A"/><polygon points="360,42 678,252 360,462 42,252" fill="#FEDF00"/><circle cx="360" cy="252" r="126" fill="#002776"/></svg>`
+    : `<svg class="w-4 h-3 rounded-[2px] shadow-sm inline-block" viewBox="0 0 60 30" fill="none"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>`;
+
+  if (toggleBtn) {
+    toggleBtn.innerHTML = `${flagSvg} <span>${isEn ? 'PT' : 'EN'}</span>`;
+  }
+
+  const mobToggle = document.getElementById('lang-toggle-mobile');
+  if (mobToggle) {
+    mobToggle.innerHTML = `${flagSvg} <span>${isEn ? 'Mudar para Português (PT)' : 'Switch to English (EN)'}</span>`;
+  }
 
   try { localStorage.setItem('lang', lang); } catch(e) {}
 }
@@ -279,9 +292,8 @@ document.addEventListener('DOMContentLoaded', () => {
     defaults[el.getAttribute('data-i18n')] = el.innerHTML;
   });
 
-  // Aplica idioma salvo (se houver)
+  // Aplica idioma salvo (se houver) ou inicializa botões de idioma
   let saved = 'pt';
   try { saved = localStorage.getItem('lang') || 'pt'; } catch(e) {}
-  if (saved === 'en') applyLang('en');
-  // Se PT, não precisa fazer nada — o DOM já está correto
+  applyLang(saved);
 });
