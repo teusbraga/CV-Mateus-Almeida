@@ -22,7 +22,7 @@ const en = {
 
   /* Navbar */
   nav_available:  'Available for new contracts & Fiverr',
-  nav_copy_email: 'Copy Email',
+  nav_send_email: 'Send Email',
   nav_services:   'Services',
   nav_why:        'Why QA + AI?',
   nav_projects:   'Projects',
@@ -198,6 +198,7 @@ const en = {
   contact_cta2:          'Message on WhatsApp',
   contact_cta3:          'Send Direct Email',
   contact_email_label:   'Professional Email',
+  contact_send_btn:      'Send Email',
   contact_copy_email:    'Copy Email',
   contact_phone_label:   'Phone & WhatsApp',
   contact_copy_phone:    'Copy Number',
